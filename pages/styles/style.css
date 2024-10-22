@@ -1,0 +1,333 @@
+/* I imported the required fonts from Google */
+
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&family=Poppins:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+body {
+    color: white;
+    background: linear-gradient(to right, #aa72ff, #804bf1c5);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 30px 10px;
+}
+
+/* Navbar Styles */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin-left: 20px;
+}
+
+.logo h1 {
+    font-size: 40px;
+    color: white;
+    font-family: "Parisienne";
+}
+
+.logo a {
+    text-decoration: none;
+}
+
+.avatar-girl {
+    display: inline-block;
+    transform: scale(.7);
+    vertical-align: middle;
+}
+
+nav ul {
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 20px;
+}
+
+nav ul li a:hover {
+    background-color: #844ff8;
+    border-radius: 5px;
+    transition: background-color 0.4s ease;
+}
+
+
+/* Section and Banner Styles */
+
+.section {
+    margin-top: 3%;
+    padding: 100px 20px;
+    text-align: center;
+    color: white;
+}
+
+.section-content {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.section h1 {
+    font-size: 48px;
+}
+
+.about-section h1 {
+    margin-bottom: 15px;
+}
+
+.section h1 span {
+    font-family: 'Parisienne';
+    font-size: 65px;
+    color: black;
+}
+
+.section p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 18px;
+    height: 100%;
+    color: #E1D7FF;
+}
+
+
+.about-section {
+    display: inline-block;
+    width: 60%;
+}
+
+.black-button {
+    display: inline-block;
+    padding: 15px 30px;
+    margin-top: 30px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #161623;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: background-color 0.4s ease, transform 0.4s ease;
+}
+
+.black-button:hover {
+    background-color: #141414;
+    border: 1px solid white;
+    transform: scale(1.1);
+}
+
+/* Skills Section Styles */
+
+.skills {
+    padding: 100px 20px;
+    background-color: #161623;
+    color: white;
+    text-align: center;
+}
+
+.skills h1 {
+    font-size: 48px;
+}
+
+.skills h1 {
+    margin-bottom: 20px;
+}
+
+.skills-container {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+
+.skill {
+    display: inline-block;
+    width: 140px;
+    margin: 20px;
+}
+
+.skill img {
+    width: 80px;
+    height: 80px;
+}
+
+.skill p {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+/* Purple Button */
+.purple-button {
+    display: inline-block;
+    padding: 15px 30px;
+    margin-top: 50px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #6c3ad8;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: background-color 0.4s ease, transform 0.4s ease;
+}
+
+.purple-button:hover {
+    background-color: #af7aff;
+    transform: scale(1.1);
+}
+
+/* Footer Styles*/
+
+footer {
+    background-color: #ebebeb;
+    color: #292929;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Education Section Styles */
+
+.education {
+    padding: 100px 20px;
+    width: 30%;
+    text-align: center;
+    color: white;
+}
+
+.education-section {
+    display: inline-block;
+
+}
+
+.education h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.education p {
+    font-size: 18px;
+    color: #E1D7FF;
+    line-height: 1.7;
+}
+
+
+/* Contact Me Styles */
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    height: 100vh;
+    margin-top: 30px;
+    text-align: left;
+}
+
+.contact-form {
+    background-color: #161622;
+    padding: 25px;
+    border-radius: 10px;
+    width: 35%;
+}
+
+.contact-form h1 {
+    font-size: 30px;
+    color: white;
+
+}
+
+.contact-form label {
+    display: block;
+    font-size: 16px;
+    color: #E1D7FF;
+    margin-bottom: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #1F1F30;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #757575;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #844ff8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #af7aff;
+}
+
+.contact-image {
+    width: 30%;
+    text-align: center;
+}
+
+.avatar-image {
+    width: 90%;
+    height: auto;
+
+}
+
+/* Additional Contact Info Styles */
+
+.additional-contact-info {
+    margin-top: 15px;
+    font-size: 16px;
+    color: #E1D7FF;
+    text-align: left;
+}
+
+.additional-contact-info p {
+    margin-bottom: 15px;
+    color: #E1D7FF;
+}
+
+.additional-contact-info strong {
+    color: #844ff8;
+}
+
+.additional-contact-info a {
+    color: white;
+    display: block;
+    text-decoration: none;
+}
+
+.additional-contact-info a:hover {
+    text-decoration: underline;
+}
