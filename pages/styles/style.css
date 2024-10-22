@@ -5,7 +5,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; /*reference: ChatGPT: In CSS, the `border-box` value for the `box-sizing` property ensures that the width and height of an element include its padding and border, so these don't increase the overall size of the element.*/
     font-family: 'Poppins';
 }
 
@@ -19,6 +19,10 @@ header {
     top: 0;
     width: 100%;
     padding: 30px 10px;
+}
+
+.center {
+    text-align: center;
 }
 
 /* Navbar Styles */
@@ -45,12 +49,12 @@ nav {
 
 .avatar-girl {
     display: inline-block;
-    transform: scale(.7);
+    transform: scale(.7); /*reference: ChatGPT: This scales the element to 70% of its original size, effectively shrinking it. */
     vertical-align: middle;
 }
 
 nav ul {
-    list-style-type: none;
+    list-style-type: none; /*to remove list markers from the list*/
     margin-right: 20px;
 }
 
@@ -71,13 +75,19 @@ nav ul li a:hover {
     border-radius: 5px;
     transition: background-color 0.4s ease;
 }
+/*About page*/
 
+.center{
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+}
 
 /* Section and Banner Styles */
 
 .section {
     margin-top: 3%;
-    padding: 100px 20px;
+    padding: 80px 20px;
     text-align: center;
     color: white;
 }
@@ -85,6 +95,7 @@ nav ul li a:hover {
 .section-content {
     display: inline-block;
     vertical-align: middle;
+    text-align: center;
 }
 
 .section h1 {
@@ -205,7 +216,7 @@ footer {
 /* Education Section Styles */
 
 .education {
-    padding: 100px 20px;
+    padding: 80px 20px;
     width: 30%;
     text-align: center;
     color: white;
@@ -213,6 +224,7 @@ footer {
 
 .education-section {
     display: inline-block;
+    text-align: center;
 
 }
 
